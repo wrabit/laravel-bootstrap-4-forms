@@ -30,7 +30,7 @@ class FormService
 
     /**
      * Set error bag name
-     * 
+     *
      * @param string $value
      * @return FormService
      */
@@ -188,7 +188,7 @@ class FormService
 
     /**
      * Set inline form style
-     * 
+     *
      * @param bool $inline
      * @return FormService
      */
@@ -344,7 +344,7 @@ class FormService
 
     /**
      * Set a minimum value for a field
-     * 
+     *
      * @param string $value
      * @return FormService
      */
@@ -355,7 +355,7 @@ class FormService
 
     /**
      * Set a maximum value for a field
-     * 
+     *
      * @param string $value
      * @return FormService
      */
@@ -423,7 +423,7 @@ class FormService
      * @param bool   $checked
      * @return FormService
      */
-    public function checkbox(string $name = null, string $label = null, string $value = 'on', bool $checked = null): FormService
+    public function checkbox(string $name = null, string $label = null, $value = 'on', bool $checked = null): FormService
     {
         return $this->_radioOrCheckbox('checkbox', $name, $label, $value, $checked);
     }
@@ -437,7 +437,7 @@ class FormService
      * @param bool   $checked
      * @return FormService
      */
-    public function radio(string $name = null, string $label = null, string $value = null, bool $checked = null): FormService
+    public function radio(string $name = null, string $label = null, $value = null, bool $checked = null): FormService
     {
         return $this->_radioOrCheckbox('radio', $name, $label, $value, $checked);
     }
